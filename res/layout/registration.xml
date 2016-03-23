@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8f4ba" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="3dp" >
+
+          
+            <EditText
+                android:id="@+id/editText1name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:hint="@string/reg_name"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+           <EditText
+                android:id="@+id/editText2phone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:paddingLeft="3dp"
+                android:hint="@string/reg_phoneno"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <EditText
+                android:id="@+id/editText3pin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:paddingLeft="3dp"
+                android:hint="@string/reg_epin"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="numberPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <EditText
+                android:id="@+id/editText4cpin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:paddingLeft="3dp"
+                android:hint="@string/reg_cpin"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="numberPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+           <EditText
+                android:id="@+id/editText5mail"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingLeft="3dp"
+                android:hint="@string/reg_email"
+                android:background="@drawable/edittext"
+                android:autoText="false"
+         	    android:editable="true"
+           		android:selectAllOnFocus="true"
+           		android:singleLine="true"
+           		android:imeOptions="flagNoExtractUi"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <EditText
+                android:id="@+id/editText6loca"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:paddingLeft="3dp"
+                android:hint="@string/reg_address"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+        
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:paddingLeft="3dp"
+                android:hint="@string/reg_city"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="text" />
+            
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+           
+            <EditText
+                android:id="@+id/editTextState"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                android:hint="@string/reg_state"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="text" />
+            
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+            
+            <EditText
+                android:id="@+id/editTextCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:paddingLeft="3dp"
+                android:hint="@string/reg_country"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="text" />
+            
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+          
+             <EditText
+                android:id="@+id/editTextZipCode"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:paddingLeft="3dp"
+                android:hint="@string/reg_zipcode"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:inputType="number" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_agree"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/regme"
+                style="@style/ButtonText"
+                android:background="@drawable/bbuton_success_rounded"
+                android:minHeight="40dp"
+                android:soundEffectsEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_mebtn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</ScrollView>

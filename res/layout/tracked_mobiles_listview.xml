@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33B5E5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/bbuton_primary_rounded" >
+
+        <Button
+            android:id="@+id/btnaddremote"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:background="@drawable/green"
+            android:text="@string/track_add"/>
+
+        <Button
+            android:id="@+id/btndelremote"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:background="@drawable/red"
+            android:text="@string/track_del"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bbuton_primary_rounded"
+        android:layout_margin="1dp" >
+        
+           <TextView
+            android:id="@+id/note1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Note :" />
+
+        <TextView
+            android:id="@+id/tmnote1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track_note1" 
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:id="@+id/tmnote2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track_note2"
+            android:layout_marginLeft="12dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/remoteuserlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/trackcpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cpn"
+        android:visibility="gone" />
+
+   
+
+</LinearLayout>

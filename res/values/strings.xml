@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <string name=""></string> -->
+<!--Default -->
+    <string name="app_name">Gaddiel Hawk-i</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="copy">Gaddiel Technologies Pvt Ltd &#169; 2014</string>
+    <string name="copyweb">www.gaddieltech.com</string>
+     <string name="remove_note">(Note: Only Tracker OFF Mobiles Are Listed.)</string>
+     
+ <!--App Header Tittle -->
+    <string name="page_login">Controller</string>
+    <string name="page_registration">Register Me</string>
+    <string name="page_dashboard">Registered Mobiles</string>
+    <string name="page_add_remote">Add Remote</string>
+    <string name="page_remove_remote">Remove Remote</string>
+    <string name="page_scheduler">Tracking Scheduler</string>
+    <string name="page_filterbydate">Tracked Dates</string>
+    <string name="page_filterbytime">Tracked Locations</string>
+    <string name="page_mapview">Tracked Map View</string>
+     <string name="page_aboutus">About Us</string>
+    
+      
+    
+ <!--Button Style -->   
+ <style name="ButtonText">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_margin">3dp</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">2</item>
+</style>
+    
+<!--Login Page -->    
+	<string name="pageonelogin">Login</string>
+	<string name="username">Phone #</string>
+	<string name="password">PIN</string>
+	<string name="loginbtn">Login</string>
+	<string name="register">I do not have account. Register Me</string>
+
+<!--Registration Page -->
+<string name="reg_name">Name *</string>
+<string name="reg_phoneno">Phone # *</string>
+<string name="reg_epin">Enter PIN *</string>
+<string name="reg_cpin">Confirm PIN *</string>
+<string name="reg_email">Email *</string>
+<string name="reg_address">Address</string>
+<string name="reg_agree">I agree to the Terms and Conditions </string>
+<string name="reg_mebtn">Register Me</string>
+<string name="reg_city">City</string>
+<string name="reg_state">State</string>
+<string name="reg_country">Country</string>
+<string name="reg_zipcode">Zip Code</string>
+<string name="lbl_null_value">Please Enter Email Address</string>
+<string name="lbl_invalid_value">Please Enter Valid Email Address</string>
+
+<!--Tracked Mobiles Page -->
+<string name="track_createremote">Registered Mobiles</string>
+<string name="track_page">Tracked Mobiles</string>
+<string name="track_remoteuser">Name</string>
+<string name="track_add">Add</string>
+<string name="track_del">Delete</string>
+<string name="track_removebtn">Remove</string>
+<string name="track_note1">• ‘Short Press’ for Tracked Details.</string>
+<string name="track_note2">• ‘Long Press’ to Schedule Tracking.</string>
+
+<!--Register Mobile to track -->
+<string name="mob_name">Name : *</string>
+<string name="mob_phoneno">Phone # *</string>
+<string name="mob_designation">Designation</string>
+<string name="mob_location">Location</string>
+<string name="mob_note">(Note: A remote can be associated only with one controller.)</string>
+<string name="mob_addremotebtn">Add Remote</string>
+<string name="mob_page">Register Mobile to track </string>
+
+<!--Remote Tracking -->
+<string name="remote_name">Name</string>
+<string name="remote_phno">Phone #</string>
+<string name="remote_victor">Victor</string>
+<string name="remote_no"> 9791755690</string>
+<string name="remote_timeschedule">Time Schedule</string>
+<string name="remote_stime">Start Time</string>
+<string name="remote_etime">End Time</string>
+<string name="remote_repeat">Days</string>
+<string name="remote_mon">MON</string>
+<string name="remote_tue">TUE</string>
+<string name="remote_wed">WED</string>
+<string name="remote_thu">THU</string>
+<string name="remote_fri">FRI</string>
+<string name="remote_sat">SAT</string>
+<string name="remote_sun">SUN</string>
+<string name="remote_evr">Every Week Repeat</string>
+<string name="remote_frequency">Frequency</string>
+<string name="remote_predefine">Predefine</string>
+
+<string name="fequ_prompt">Choose a Frequency</string>
+<string-array name="remote_array">
+        <item>MINUTES</item>
+        <item>SECONDS</item>
+        <item>HOURS</item>
+        
+    </string-array>
+<string name="remote_customize">Time Intervel</string>
+<string name="remote_startbtn">Start</string>
+<string name="remote_stopbtn">Stop</string>
+<string name="remote_page">Remote Tracking</string>
+
+<!-- -->	
+<string name="addre">Gaddiel Technologies Pvt Ltd..  </string> 
+   <string name="tel">&#160;&#160; +91 431 2457778 \n&#160;&#160;  +1 347 478 6444</string>   
+   <string name="web">&#160;&#160; www.gaddieltech.com</string>   
+   <string name="email">&#160;&#160; hawki@gaddieltech.com</string>  
+   <string name="abo">About  \nGaddiel Hawk-i</string> 
+   <string name="scope">Scope :</string> 
+   <string name="list">&#160;&#160;&#160;To track the location of a mobile device, \n &#160;&#160;  e.g. salesmen \n &#160;&#160; To track the movement of school children for security reasons  \n &#160;&#160; To track the movement of the vehicle \n &#160;&#160; To track the displacement of objects or get alert when objects are disturbed</string>
+   <string name="aboro">Develop a mobile application for controlled tracking of a mobile device’s location at periodic intervals.   The tracking is to be controlled from another mobile application.  Both control and tracking are to be done through short message services. </string> 
+    <string name="aline">                 &#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;&#8211;</string>
+	 <string name="help">Help</string>
+	<string name="about">About Us </string>
+</resources>

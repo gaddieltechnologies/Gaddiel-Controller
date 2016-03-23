@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:background="@drawable/bbuton_info_rounded"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginRight="5dp"
+                    android:text="@string/remote_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remote_victor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remote_phno"
+                    android:layout_marginRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remote_no"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:background="@drawable/bbuton_info_rounded"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/remote_timeschedule"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:hint="@string/remote_stime"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:layout_margin="2dp" >
+
+                    
+                </EditText>
+
+               <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:hint="@string/remote_etime"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:layout_margin="2dp" 
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/remote_repeat"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+               
+	                <LinearLayout
+	                    android:layout_width="40dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical"
+	                    android:layout_marginLeft="15dp" >
+			                <CheckBox
+			                    android:id="@+id/checkBox1"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center" 
+			                    />
+			                 <TextView
+			                    android:id="@+id/textView9"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/remote_mon"
+			                    android:layout_gravity="center" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="40dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical" >
+			               <CheckBox
+			                    android:id="@+id/checkBox2"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center" />
+			               <TextView
+			                    android:id="@+id/textView10"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center"
+			                    android:text="@string/remote_tue" />
+	                    
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="40dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical" >
+			                <CheckBox
+			                    android:id="@+id/checkBox3"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center" />
+			                 <TextView
+			                    android:id="@+id/textView11"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center"
+			                    android:text="@string/remote_wed" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="40dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical" >
+			                <CheckBox
+			                    android:id="@+id/checkBox4"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center" />
+			                 <TextView
+			                    android:id="@+id/textView12"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center"
+			                    android:text="@string/remote_thu" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="40dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical" >
+			                <CheckBox
+			                    android:id="@+id/checkBox5"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center" />
+			                 <TextView
+			                    android:id="@+id/textView13"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center"
+			                    android:text="@string/remote_fri" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="40dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical" >
+	                      
+			                <CheckBox
+			                    android:id="@+id/checkBox6"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center" />
+			                 <TextView
+			                    android:id="@+id/textView14"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center"
+			                    android:text="@string/remote_sat" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="40dp"
+	                    android:layout_height="match_parent"
+	                    android:orientation="vertical" >
+			                 <CheckBox
+			                    android:id="@+id/checkBox7"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center" />
+			                  <TextView
+			                    android:id="@+id/textView15"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_gravity="center"
+			                    android:text="@string/remote_sun" />
+	                </LinearLayout>
+
+            </LinearLayout>
+
+           
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remote_evr"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:padding="5dp"
+            android:background="@drawable/bbuton_info_rounded"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/remote_frequency"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                
+
+                <Spinner
+                    android:id="@+id/spinnerfrequ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                
+                <EditText
+                    android:id="@+id/editpredefine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:hint="@string/remote_customize"
+                    android:background="@drawable/edittext"
+                    android:inputType="numberSigned"
+                    android:ems="10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.38"
+                    android:background="@drawable/green"
+                    android:text="@string/remote_startbtn" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.38"
+                    android:background="@drawable/red"
+                    android:text="@string/remote_stopbtn" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</ScrollView>

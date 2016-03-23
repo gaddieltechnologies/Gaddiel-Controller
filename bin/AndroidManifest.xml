@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gaddiel.controller"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+      <permission
+        android:name="com.gaddiel.controller.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+      
+       <uses-permission android:name="com.gaddiel.controller.permission.MAPS_RECEIVE"/>
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />    
+    
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gaddiel.controller.SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--  DashboardActivity Activity -->
+        <activity
+ 			  android:name="com.gaddiel.controller.MainActivity"
+ 			  android:label="@string/page_login">
+        </activity>
+         <activity
+            android:name="com.gaddiel.controller.Registration"
+            android:label="@string/page_registration">
+         </activity>
+         <activity
+            android:name="com.gaddiel.controller.Tracked_Mobiles"
+            android:label="@string/page_dashboard">
+         </activity>
+         <activity
+            android:name="com.gaddiel.controller.MobileTracker"
+            android:label="@string/page_add_remote">
+         </activity>
+          <activity
+            android:name="com.gaddiel.controller.RemoteTracking"
+            android:label="@string/page_scheduler">
+         </activity>
+           <activity
+            android:name="com.gaddiel.controller.RemoteTrackingUpdate"
+            android:label="@string/remote_page">
+         </activity>
+          <activity
+            android:name="com.gaddiel.controller.RemoteTrackingDetails"
+            android:label="@string/page_filterbydate">
+         </activity>
+         
+            <activity
+            android:name="com.gaddiel.controller.RemoteLocationDetails"
+            android:label="@string/page_filterbytime">
+         </activity>
+            <activity
+            android:name="com.gaddiel.controller.RLMapView"
+            android:label="@string/page_mapview">
+         </activity>
+           <activity
+            android:name="com.gaddiel.controller.MobileTrackerRemove"
+            android:label="@string/page_remove_remote">
+         </activity>
+          <activity
+            android:name="com.gaddiel.controller.AboutUs"
+            android:label="@string/page_aboutus">
+         </activity>
+         
+          <meta-data
+           android:name="com.google.android.maps.v2.API_KEY"
+           android:value="AIzaSyA4qaDQ0XgLhbvKygAVENY6xMuSQwtmJLU"/>
+   		 <meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+     
+      		 <receiver android:name=".AlarmReceiver" >                 
+             </receiver>  
+             <receiver android:name=".AlarmReceiver1" >                 
+             </receiver>  
+             <receiver android:name=".SMSReceiver">
+	            <intent-filter android:priority="1000">
+	                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+	            </intent-filter>
+       		 </receiver>
+		
+    </application>
+
+</manifest>
